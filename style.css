@@ -1,0 +1,102 @@
+
+body {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin: 0;
+}
+
+.hint {
+    text-align: center;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+}
+
+main {
+    padding-top: 2rem;
+    text-align: center;
+    background-color: grey;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 8rem);
+    gap: 1rem;
+    padding-bottom: 10rem;
+    grid-template-areas: 
+    "item1 item1 item2 item3"
+    "item4 item4 item4 item5"
+    "item6 item6 item6 item6"
+    "item7 item8 item9 item9"
+    
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item:nth-child(1){
+    grid-area: item1;
+    background-color: yellowgreen;
+}
+
+.grid-item:nth-child(2){
+    background-color: rgb(223, 175, 52);
+    grid-area: item2;
+}
+
+.grid-item:nth-child(3){
+    background-color: rgb(223, 175, 52);
+    grid-area: item3;   
+}
+
+.grid-item:nth-child(4){
+    background-color: darkblue;
+    grid-area: item4;
+}
+
+.grid-item:nth-child(5){
+    background-color: rgb(223, 175, 52);
+    grid-area: item5;
+}
+
+.grid-item:nth-child(6){
+    background-color: purple;
+    grid-area: item6;
+}
+
+.grid-item:nth-child(7){
+    background-color: rgb(223, 175, 52);
+    grid-area: item7;
+}
+
+.grid-item:nth-child(8){
+    background-color: rgb(223, 175, 52);
+    grid-area: item8;
+}
+
+.grid-item:nth-child(9){
+    background-color: lightblue;
+    grid-area: item9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
